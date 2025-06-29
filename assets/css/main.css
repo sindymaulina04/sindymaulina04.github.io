@@ -1273,3 +1273,54 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-info {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.portfolio-info h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.portfolio-info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.portfolio-links a {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.portfolio-links a:hover {
+  color: #fff;
+}
