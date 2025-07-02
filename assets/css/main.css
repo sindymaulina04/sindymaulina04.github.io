@@ -1270,57 +1270,198 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
-.portfolio-container {
+.portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  margin-top: 30px;
 }
 
-.portfolio-item {
-  background: #fff;
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  transition: 0.3s;
+  background: #fff;
+  transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio-wrap img {
+.portfolio-card img {
   width: 100%;
   display: block;
 }
 
-.portfolio-info {
-  background: #222;
-  color: #fff;
-  padding: 20px;
+.portfolio-card:hover {
+  transform: translateY(-5px);
 }
 
-.portfolio-info h4 {
-  font-size: 18px;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  width: 100%;
+  padding: 16px;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4,
+.overlay p {
+  margin: 0;
+}
+
+.project-description {
+  padding: 15px;
+}
+
+.project-description h4 {
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
-.portfolio-info p {
+.project-description p {
   font-size: 14px;
-  color: #ccc;
+  color: #444;
 }
 
 .portfolio-links a {
-  font-size: 18px;
-  margin-right: 12px;
   color: #ffc107;
-  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 .portfolio-links a:hover {
   color: #fff;
 }
+
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.certificate-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.certificate-content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.issuer {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.certificate-content a {
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.certificate-content a:hover {
+  color: #0056b3;
+}
+
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.hover-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  padding: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-text {
+  text-align: center;
+  color: #fff;
+}
+
+.certificate-text h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.certificate-text .issuer {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.certificate-text .skills {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.certificate-text a {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.certificate-text a:hover {
+  background: #009ad6;
+}
+
