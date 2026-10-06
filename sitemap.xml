@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sindymaulina04.github.io/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://sindymaulina04.github.io/assets/img/hero1.jpeg</image:loc>
+      <image:title>Sindy Maulina - Teknik Informatika ULBI</image:title>
+      <image:caption>Foto profil Sindy Maulina, mahasiswa D4 Teknik Informatika ULBI. Full-Stack Developer dan QA Specialist.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sindymaulina04.github.io/assets/img/SINDY%20MAULINA.png</image:loc>
+      <image:title>Sindy Maulina Profile</image:title>
+      <image:caption>Sindy Maulina - Mahasiswa D4 Teknik Informatika Universitas Logistik & Bisnis Internasional (ULBI).</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://sindymaulina04.github.io/portfolio-details.html</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
